@@ -36,9 +36,9 @@ describe('Functional Onboarding Testing', function() {
       .captureBrowserConsoleLogs((event) => {
         console.log(event.type, event.timestamp, event.args[0].value);
       })
-      .navigateTo('/')
+      .navigateTo('https://ultimateqa.com/automation').pause(1000)
       .executeScript(function() {
-        console.log('here');
+        console.log('here are errors');
       }, []);
   });
 })

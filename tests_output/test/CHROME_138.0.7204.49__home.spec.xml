@@ -5,14 +5,14 @@
 
   <testsuite name="Functional Onboarding Testing" id="test.home.spec"
     errors="0" failures="0" hostname="" package="home.spec" skipped="0"
-    tests="2" time="1.632" timestamp="">
+    tests="2" time="5.940" timestamp="">
   
-    <testcase name="Should have the correct title" classname="Functional Onboarding Testing" time="1.581" assertions="1">
+    <testcase name="Should have the correct title" classname="Functional Onboarding Testing" time="1.674" assertions="1">
 
     
     </testcase>
   
-    <testcase name="captures and logs console.log event" classname="Functional Onboarding Testing" time="0.05100" assertions="0">
+    <testcase name="captures and logs console.log event" classname="Functional Onboarding Testing" time="4.265" assertions="0">
     </testcase>
   
 

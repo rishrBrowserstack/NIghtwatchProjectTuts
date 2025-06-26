@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page with HTML Errors</title>
+    <!-- Error 1: Missing closing </style> tag -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            border: 1px solid blue;
+            padding: 10px;
+        }
+    </style>
+
+    <!-- Error 2: Missing required 'href' attribute for <link> (though browser might tolerate) -->
+    <link rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <!-- Error 3: Mismatched closing tag (opened <div>, closed with </p>) -->
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p>This paragraph has some content.
+        </div>
+
+    <!-- Error 4: Unclosed <button> tag -->
+    <button class="my-button">Click Me
+
+    <!-- Error 5: Invalid 'width' attribute value (should be number or %) -->
+    <img src="https://placehold.co/100x100" alt="Placeholder" width="large">
+
+    <p>Here is some <bold>bold</bold> text.</p> <!-- Error 6: <bold> is not a standard HTML tag -->
+
+    <!-- Error 7: Duplicate ID attribute (assuming another 'unique-id-element' exists somewhere else) -->
+    <input type="text" id="unique-id-element" value="Input 1">
+    <label for="unique-id-element">Input Label 1</label>
+
+    <br> <!-- Valid HTML5, but often seen without / -->
+
+    <!-- Error 8: Self-closing tag that isn't really self-closing (valid in XHTML, but not standard HTML5) -->
+    <p/>This is a paragraph closed with XML syntax.</p>
+
+    <!-- Error 9: Attribute value without quotes -->
+    <a href=https://example.com/test>Test Link</a>
+
+</body>
+</html>

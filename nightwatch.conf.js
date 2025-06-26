@@ -70,7 +70,10 @@ module.exports = {
             //'--allow-insecure-localhost',
             //'--headless=new'
           ]
-        }
+        },
+        loggingPrefs: {
+                browser: 'ALL' // Or 'SEVERE' if you only want errors
+            }
       },
 
       webdriver: {
