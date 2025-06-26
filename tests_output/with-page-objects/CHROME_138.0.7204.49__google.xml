@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="1"
+            tests="1">
+
+  <testsuite name="google search with consent form - page objects" id="with-page-objects.google"
+    errors="1" failures="1" hostname="" package="with-page-objects" skipped="0"
+    tests="1" time="11.76" timestamp="">
+  
+    <testcase name="should find nightwatch.js in results" classname="google search with consent form - page objects" time="10.56" assertions="2">
+
+      <failure message="Expected element @results &lt;#rso&gt; to be present - element was not found - expected &#34;present&#34; but got: &#34;not present&#34; (6501ms)">    at DescribeInstance.&lt;anonymous&gt; (/Users/rishabh.si@browserstack.com/Desktop/Projects/nightwatchProject/nightwatch/examples/with-page-objects/google.js:23:24)</failure>
+
+    
+    <error type="error"><![CDATA[
+    NoSuchElementError: Unable to locate element: #rso using css selector
+    at throwDecodedError (/Users/rishabh.si@browserstack.com/Desktop/Projects/nightwatchProject/node_modules/selenium-webdriver/lib/error.js:521:15)
+    at ChromeDriver.handleErrorResponse (/Users/rishabh.si@browserstack.com/Desktop/Projects/nightwatchProject/node_modules/nightwatch/lib/transport/selenium-webdriver/index.js:400:7)
+    at TransportActions.makeResult (/Users/rishabh.si@browserstack.com/Desktop/Projects/nightwatchProject/node_modules/nightwatch/lib/transport/selenium-webdriver/actions.js:85:20)
+    at Object.locateMultipleElements (/Users/rishabh.si@browserstack.com/Desktop/Projects/nightwatchProject/node_modules/nightwatch/lib/transport/selenium-webdriver/actions.js:71:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async LocateElement.findElement (/Users/rishabh.si@browserstack.com/Desktop/Projects/nightwatchProject/node_modules/nightwatch/lib/element/locator.js:167:20)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   Unable to locate element: #rso using css selector
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+ NoSuchElementError
+   An error occurred while running .sendKeys() command on &lt;[ng-model=&#34;todoList.todoText&#34;]&gt;: Timed out while waiting for element &#34;[ng-model=&#34;todoList.todoText&#34;]&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+    {&#34;error&#34;:{&#34;name&#34;:&#34;NoSuchWindowError&#34;,&#34;remoteStacktrace&#34;:&#34;&#34;},&#34;status&#34;:-1,&#34;value&#34;:null}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /Users/rishabh.si@browserstack.com/Desktop/Projects/nightwatchProject/nightwatch/examples/with-custom-commands/angularTodo.js:15
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     13 |     const elements = await browser
+     14 |       .navigateTo(&#39;https://angularjs.org&#39;)
+     15 |       .sendKeys(&#39;[ng-model=&#34;todoList.todoText&#34;]&#39;, &#39;what is nightwatch?&#39;) 
+     16 |       .click(&#39;[value=&#34;add&#34;]&#39;)
+     17 |       .angular.getElementsInList(&#39;todoList.todos&#39;); // use of custom-command
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;[value=&#34;add&#34;]&gt;: Timed out while waiting for element &#34;[value=&#34;add&#34;]&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+    {&#34;error&#34;:{&#34;name&#34;:&#34;NoSuchWindowError&#34;,&#34;remoteStacktrace&#34;:&#34;&#34;},&#34;status&#34;:-1,&#34;value&#34;:null}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /Users/rishabh.si@browserstack.com/Desktop/Projects/nightwatchProject/nightwatch/examples/with-custom-commands/angularTodo.js:16
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     14 |       .navigateTo(&#39;https://angularjs.org&#39;)
+     15 |       .sendKeys(&#39;[ng-model=&#34;todoList.todoText&#34;]&#39;, &#39;what is nightwatch?&#39;)
+     16 |       .click(&#39;[value=&#34;add&#34;]&#39;) 
+     17 |       .angular.getElementsInList(&#39;todoList.todos&#39;); // use of custom-command
+     18 | 
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
