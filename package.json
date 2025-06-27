@@ -11,6 +11,8 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "chromedriver": "^138.0.0",
     "nightwatch": "^3.12.2"
   }
 }

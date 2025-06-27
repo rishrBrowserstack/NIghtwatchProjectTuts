@@ -14,7 +14,18 @@
 module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
-  src_folders: ['test','nightwatch/examples'],
+  src_folders: ['features/step_definitions'],
+
+ 
+  test_runner: {
+    type: 'cucumber',
+    options: {
+      feature_path: '*/*.feature',
+      require: ['features/step_definitions']
+
+    },
+    
+  },
 
   // See https://nightwatchjs.org/guide/concepts/page-object-model.html
   page_objects_path: ['nightwatch/page-objects'],
@@ -91,6 +102,7 @@ module.exports = {
     enabled: true,
     log_path: './logs/analytics',
     client_id: '8e7d4da3-77ec-4510-87c0-41d31d559bef'
-  }
+  },
+  
   
 };
