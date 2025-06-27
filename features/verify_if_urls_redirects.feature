@@ -9,8 +9,7 @@ Feature: Checking Basic URL and Saving Logs, Errors
   @searchUrlAndTitle
   Scenario Outline: Verifying if the link works correctly
     Given I click on the link "<LinkText>"
-    Then Title is "<Expected Title>"
-    Then Url is "<Expected URL>"
+    Then Title is "<Expected Title>" and Url is "<Expected URL>"
 
 
     Examples:

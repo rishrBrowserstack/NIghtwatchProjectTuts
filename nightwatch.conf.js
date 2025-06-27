@@ -14,14 +14,14 @@
 module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
-  src_folders: ['features/step_definitions'],
+  src_folders: ['/step_definitions'],
 
  
   test_runner: {
     type: 'cucumber',
     options: {
       feature_path: '*/*.feature',
-      require: ['features/step_definitions']
+      require: ['step_definitions']
 
     },
     
